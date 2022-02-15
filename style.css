@@ -14,10 +14,8 @@ body {
   color: #555;
   background-color: #f7f7f7;
   min-height: 100vh;
-
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .container {
@@ -29,7 +27,6 @@ body {
 .countries {
   /* margin-bottom: 8rem; */
   display: flex;
-
   font-size: 2rem;
   opacity: 0;
   transition: opacity 1s;
@@ -39,7 +36,6 @@ body {
   background-color: #fff;
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
-  width: 30rem;
   border-radius: 0.7rem;
   margin: 0 3rem;
   /* overflow: hidden; */
@@ -47,10 +43,8 @@ body {
 
 .neighbour::before {
   content: 'Neighbour country';
-  width: 100%;
   position: absolute;
   top: -4rem;
-
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
