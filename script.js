@@ -32,5 +32,6 @@ function getCountryData(country){
        }
        )
 }
-getCountryData('azerbaijan');
+const inputCountry = prompt("Enter your favorite country: ");
+getCountryData('inputCountry');
 
