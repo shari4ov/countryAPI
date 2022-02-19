@@ -22,9 +22,10 @@ function getCountryData(country){
        fetch(`https://restcountries.com/v3.1/name/${country}`)
        .then((promise)=> promise.json())
        .then((data)=> {renderCountry(data[0]);
+              console.log(data[0])
               const neighbour = data[0].borders;
               if(!neighbour) return; 
-              console.log(neighbour);
+             
               //country 2
               for(let each of neighbour){
                      fetch(`https://restcountries.com/v3.1/name/${each}`).then((promise2)=> promise2.json()).then(data2=> {renderCountry(data2[0],'neighbour')})
@@ -32,6 +33,6 @@ function getCountryData(country){
        }
        )
 }
-const inputCountry = prompt("Enter your favorite country: ");
-getCountryData('inputCountry');
+const inputCountry = prompt("Enter your favorite country: ").toLowerCase();
+getCountryData(inputCountry);
 
